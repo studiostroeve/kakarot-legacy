@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kakarot’s Legacy</title>
     <style>
-        * {
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: white;
+        @font-face {
+            font-family: Fredoka-Bold;
+            src: url(fonts/Fredoka-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: Saiyan-Sans;
+            src: url("fonts/Saiyan-Sans.ttf");
         }
 
         html {
@@ -41,17 +46,18 @@
             background: #ffffff05;
             border-radius: 25px;
             padding: 10px;
-            gap: 10px;
+            gap: 25px;
         }
 
         .image-container {
             width: 100%;
             height: 100%;
             flex: 1;
-            background-color: white;
         }
 
         .text-container {
+            display: flex;
+            flex-direction: column;
             align-content: center;
             overflow: scroll;
             text-wrap: pre;
@@ -59,6 +65,31 @@
             height: 100%;
             flex: 1.5;
         }
+
+        .text {
+            color: #888888;
+            font-family: Fredoka-Bold;
+            height: 100%;
+            width: 100%;
+            flex: 6;
+        }
+
+        .title {
+            color: white;
+            font-size: 42pt;
+            font-family: Saiyan-Sans;
+            height: 100%;
+            width: 100%;
+            flex: 1;
+        }
+
+        .img-main {
+            border-radius: 15px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
     </style>
 </head>
 
@@ -66,50 +97,120 @@
     <div class="main">
         <div class="row">
             <div class="image-container">
-
+                <img class="img-main" src="images/goku-false-super-saiyan.gif" alt="GOKU FALSE SUPER SAIYAN">
             </div>
             <div class="text-container">
-                <!-- HIER KAN JE TYPEN-->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque mi, eleifend vel quam id, porta
-                tristique nulla. Quisque scelerisque ante nunc, quis feugiat arcu tristique nec. Aliquam at nibh cursus,
-                rutrum magna nec, dignissim ex. Proin massa tellus, elementum quis velit eu, mattis congue diam. Donec
-                faucibus condimentum dolor, non tempus lorem iaculis nec. Nam tempus erat at mi blandit hendrerit. Ut id
-                maximus nibh. Phasellus iaculis varius rutrum. Sed sit amet facilisis massa. Ut urna felis, auctor sed
-                eros id, congue feugiat erat. Aliquam posuere nunc id egestas luctus.
+                <!-- DIT IS VAK NUMMER 1 -->
+                <div class="title"
+                    style="background: -webkit-linear-gradient(right, rgb(255, 251, 0), rgb(255, 72, 0)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    <!-- TITEL -->
+                     hele coole titel
+                    <!-- EINDE TITEL-->
+                </div>
+                <div class="text">
+                    <!-- TEKST -->
 
-                Proin tellus ante, pretium nec magna non, suscipit fermentum enim. Nulla felis nunc, placerat a
-                condimentum et, cursus a lacus. Sed nisi ante, consequat sed mauris ut, ullamcorper venenatis nisi.
-                Nulla ac nibh malesuada, faucibus augue non, congue massa. Maecenas porta sollicitudin elit sit amet
-                ultrices. Sed ornare augue id neque egestas sollicitudin. Fusce rutrum lacus feugiat orci hendrerit, non
-                scelerisque ipsum pulvinar. In eget est vestibulum, fermentum justo nec, placerat dolor.
-
-                Nullam varius, sapien ac ultrices finibus, velit tortor aliquet erat, ac aliquam dui diam et libero.
-                Integer in bibendum arcu, vitae consectetur eros.
+                    <!-- EINDE TEKST -->
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="text-container">
-                <!-- HIER KAN JE TYPEN-->
+                <!-- DIT IS VAK NUMMER 2 -->
+                <div class="title"
+                    style="background: -webkit-linear-gradient(right, rgb(68, 255, 0), rgb(72, 0, 255)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    <!-- TITEL -->
+                nog een hele coole titel
+                    <!-- EINDE TITEL-->
+                </div>
+                <div class="text">
+                    <!-- TEKST -->
+
+                    <!-- EINDE TEKST -->
+                </div>
             </div>
             <div class="image-container">
+                <img class="img-main" src="images/goku-false-super-saiyan.gif" alt="GOKU FALSE SUPER SAIYAN">
+            </div>
 
+        </div>
+        \<div class="row">
+            <div class="image-container">
+                <img class="img-main" src="images/goku-false-super-saiyan.gif" alt="GOKU FALSE SUPER SAIYAN">
+            </div>
+            <div class="text-container">
+                <!-- DIT IS VAK NUMMER 3 -->
+                <div class="title"
+                    style="background: -webkit-linear-gradient(right, rgb(255, 251, 0), rgb(255, 72, 0)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    <!-- TITEL -->
+                     hele coole titel
+                    <!-- EINDE TITEL-->
+                </div>
+                <div class="text">
+                    <!-- TEKST -->
+
+                    <!-- EINDE TEKST -->
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="image-container">
+            <div class="text-container">
+                <!-- DIT IS VAK NUMMER 4 -->
+                <div class="title"
+                    style="background: -webkit-linear-gradient(right, rgb(255, 251, 0), rgb(255, 72, 0)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    <!-- TITEL -->
+                nog een hele coole titel
+                    <!-- EINDE TITEL-->
+                </div>
+                <div class="text">
+                    <!-- TEKST -->
 
+                    <!-- EINDE TEKST -->
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="img-main" src="images/goku-false-super-saiyan.gif" alt="GOKU FALSE SUPER SAIYAN">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="image-container">
+                <img class="img-main" src="images/goku-false-super-saiyan.gif" alt="GOKU FALSE SUPER SAIYAN">
             </div>
             <div class="text-container">
-                <!-- HIER KAN JE TYPEN-->
+                <!-- DIT IS VAK NUMMER 5 -->
+                <div class="title"
+                    style="background: -webkit-linear-gradient(right, rgb(255, 251, 0), rgb(255, 72, 0)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    <!-- TITEL -->
+                     hele coole titel
+                    <!-- EINDE TITEL-->
+                </div>
+                <div class="text">
+                    <!-- TEKST -->
+
+                    <!-- EINDE TEKST -->
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="text-container">
-                <!-- HIER KAN JE TYPEN-->
+                <!-- DIT IS VAK NUMMER 6 -->
+                <div class="title"
+                    style="background: -webkit-linear-gradient(right, rgb(255, 251, 0), rgb(255, 72, 0)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    <!-- TITEL -->
+                nog een hele coole titel
+                    <!-- EINDE TITEL-->
+                </div>
+                <div class="text">
+                    <!-- TEKST -->
+
+                    <!-- EINDE TEKST -->
+                </div>
             </div>
             <div class="image-container">
-
+                <img class="img-main" src="images/goku-false-super-saiyan.gif" alt="GOKU FALSE SUPER SAIYAN">
             </div>
+
         </div>
     </div>
 </body>
