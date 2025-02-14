@@ -85,6 +85,7 @@ body {
 }
 
 .navbar-links.active {
+  z-index 2010:
   width: 100%;
   height: auto;
   flex-direction: column;
