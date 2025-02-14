@@ -91,6 +91,10 @@ body {
   position: relative;
   height: auto;
   flex-direction: column;
+  navbar-link {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .navbar-burger {
