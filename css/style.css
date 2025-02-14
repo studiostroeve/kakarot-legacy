@@ -85,7 +85,8 @@ body {
 }
 
 .navbar-links.active {
-  background: red;
+  position: absolute;
+  flex-direction: column;
 }
 
 .navbar-burger {
