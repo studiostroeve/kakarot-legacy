@@ -84,6 +84,10 @@ body {
     position: absolute;
 }
 
+.navbar-links.active {
+  background: red;
+}
+
 .navbar-burger {
   height: 100%;
   max-height: 50px;
