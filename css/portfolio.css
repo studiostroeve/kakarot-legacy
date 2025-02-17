@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Fredoka-Bold;
+    src: url(../fonts/Fredoka-Bold.ttf);
+}
+
+@font-face {
+    font-family: Fredoka-Regular;
+    src: url(../fonts/Fredoka-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fredoka-Light;
+    src: url(../fonts/Fredoka-Light.ttf);
+}
+
+@font-face {
+    font-family: Saiyan-Sans;
+    src: url(../fonts/Saiyan-Sans.ttf);
+}
+
+.portfolio-container {
+    height: auto;
+    width: auto;
+    justify-items: center;
+    display: grid;
+}
+
+.portfolio-row {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.portfolio-column {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.portfolio-item {
+    background-color: #ffffff11;
+    position: relative;
+    backdrop-filter: blur(10px);
+    width: 180px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.p-img-container img {
+    height: 200px;
+    width: 160px;
+    object-fit: cover;
+}
+
+.p-text-container {
+    color: white;
+    font-family: Fredoka-Light;
+}

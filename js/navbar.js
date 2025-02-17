@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
           aura.appendChild(svgInstance);
         }
         let counter = 0
-        // Start updating turbulence seed continuously every 500ms
         seedInterval = setInterval(() => {
           const turbulence = svgInstance.querySelector("#turbulence");
           if (turbulence) {
