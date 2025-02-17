@@ -1,0 +1,76 @@
+<!--
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <defs>
+        <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+    </defs>
+    <rect width="900" height="600" fill="#6600FF"></rect>
+    <g filter="url(#blur1)">
+        <circle cx="172" cy="545" fill="#00CC99" r="357"></circle>
+        <circle cx="19" cy="57" fill="#6600FF" r="357"></circle>
+        <circle cx="434" cy="145" fill="#00CC99" r="357"></circle>
+        <circle cx="658" cy="505" fill="#00CC99" r="357"></circle>
+        <circle cx="122" cy="211" fill="#6600FF" r="357"></circle>
+        <circle cx="238" cy="368" fill="#00CC99" r="357"></circle>
+    </g>
+</svg>
+-->
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <defs>
+        <filter id="base">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="91" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+    </defs>
+    <rect width="900" height="600" fill="#ffffff00"></rect>
+    <g filter="url(#base)">
+        <rect width="900" height="600" fill="#ffffff00"></rect>
+        <!-- Outer group: sets the desired rotation center -->
+        <g transform="translate(300,300)">
+            <!-- Middle group: applies rotation around (0,0) -->
+            <g>
+                <animateTransform attributeName="transform" type="rotate"
+                    from="0" to="360" dur="10s"
+                    repeatCount="indefinite" />
+                <!-- Inner group: offsets the circle from (0,0) -->
+                <g transform="translate(350,0)">
+                    <circle r="150" fill="#dd99ff" />
+                </g>
+            </g>
+        </g>
+
+        <!-- Outer group: sets the desired rotation center -->
+        <g transform="translate(800,150)">
+            <!-- Middle group: applies rotation around (0,0) -->
+            <g>
+                <animateTransform attributeName="transform" type="rotate"
+                    from="90" to="450" dur="6s"
+                    repeatCount="indefinite" />
+                <!-- Inner group: offsets the circle from (0,0) -->
+                <g transform="translate(150,0)">
+                    <circle r="150" fill="#99ddff" />
+                </g>
+            </g>
+        </g>
+
+        <!-- Outer group: sets the desired rotation center -->
+        <g transform="translate(500,300)">
+            <!-- Middle group: applies rotation around (0,0) -->
+            <g>
+                <animateTransform attributeName="transform" type="rotate"
+                    from="180" to="540" dur="10s"
+                    repeatCount="indefinite" />
+                <!-- Inner group: offsets the circle from (0,0) -->
+                <g transform="translate(200,0)">
+                    <circle r="210" fill="#99ffdd" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
