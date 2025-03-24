@@ -24,12 +24,6 @@ body {
     background: linear-gradient(rgb(2, 2, 67), black);  
 }
 
-#visual {
-    position: fixed;
-    opacity: .3;
-    width: 100vw;
-}
-
 .portfolio-container {
     height: auto;
     width: auto;
