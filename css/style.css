@@ -98,7 +98,7 @@ body {
     flex-direction: column;
     padding: 10px;
     gap: 25px;
-    margin-bottom: 250px;
+    margin-bottom: auto;
 }
 
 .row {

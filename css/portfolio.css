@@ -18,6 +18,18 @@
     src: url(../fonts/Saiyan-Sans.ttf);
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgb(2, 2, 67), black);  
+}
+
+#visual {
+    position: fixed;
+    opacity: .3;
+    width: 100vw;
+}
+
 .portfolio-container {
     height: auto;
     width: auto;
@@ -43,8 +55,8 @@
     background-color: #ffffff11;
     position: relative;
     backdrop-filter: blur(10px);
-    width: 180px;
-    height: 280px;
+    width: 300px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,12 +65,27 @@
 }
 
 .p-img-container img {
-    height: 200px;
-    width: 160px;
+    width: 100%;
     object-fit: cover;
 }
 
 .p-text-container {
     color: white;
     font-family: Fredoka-Light;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 1100px) {
+    .portfolio-item {
+        width: 180px;
+        height: 280px;
+    }
+
+    iframe {
+        height: 200px;
+    }
 }
