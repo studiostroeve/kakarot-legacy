@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Fredoka-Bold;
+    src: url(../fonts/Fredoka-Bold.ttf);
+}
+
+@font-face {
+    font-family: Fredoka-Regular;
+    src: url(../fonts/Fredoka-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fredoka-Light;
+    src: url(../fonts/Fredoka-Light.ttf);
+}
+
+@font-face {
+    font-family: Saiyan-Sans;
+    src: url(../fonts/Saiyan-Sans.ttf);
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgb(67, 2, 2), rgb(156, 99, 1));
+}
+
+.download-column {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.download-item {
+    background-color: #ffffff11;
+    position: relative;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.d-img-container img {
+    width: 320px;
+    object-fit: contain;
+}
+
+.d-text-container {
+    color: white;
+    font-family: Fredoka-Light;
+}
+
+
+.d-content {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    align-content: start;
+}
+
+.d-button {
+    background: -webkit-linear-gradient(left, rgb(255, 0, 0), rgb(255, 162, 1));
+    border-radius: 8px;
+    color: white;
+    padding: .5rem;
+    font-family: Saiyan-Sans;
+    width: 175px;
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+}

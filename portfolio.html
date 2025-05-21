@@ -39,6 +39,16 @@
 
   <div class="background">
     <div class="main-container">
+      <div id="image-viewer">
+        <span class="close">&times;</span>
+        <div class="viewer-content-container">
+          <img class="modal-content" id="full-image">
+          <div id="full-text">
+            This is a quick test text! It's quite long isn't it? I like adding large texts to test how
+            to wrapping works. Okay. Cya l8r!
+          </div>
+        </div>
+      </div>
       <div class="portfolio-container">
         <div class="title head"
           style="background: -webkit-linear-gradient(right, rgb(255, 0, 247), rgb(81, 0, 255), rgb(0, 89, 255)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
@@ -49,7 +59,7 @@
 
             <div class="portfolio-item">
               <div class="p-img-container">
-                <img src="images/portfolio/IMG_0222.jpg" alt="Goku">
+                <img src="images/portfolio/IMG_0222.jpg" alt="Goku" data-text="This is SSJ 4 goku from DB DAIMA. Made by DrawingBall">
               </div>
               <div class="p-text-container">
                 This is SSJ 4 goku from DB DAIMA. Made by DrawingBall
@@ -58,10 +68,19 @@
 
             <div class="portfolio-item">
               <div class="p-img-container">
-                <img src="images/portfolio/IMG_0226.jpg" alt="Goku">
+                <img src="images/portfolio/IMG_0226.jpg" alt="Goku" data-text="TRUNKS SUPER-SAIYAN RAGE by DrawingBall">
               </div>
               <div class="p-text-container">
                 TRUNKS SUPER-SAIYAN RAGE by DrawingBall
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="p-img-container">
+                <img src="images/portfolio/IMG_1767.jpg" alt="Goku" data-text="GOKU BLACK (DBSuper) by DrawingBall">
+              </div>
+              <div class="p-text-container">
+                GOKU BLACK (DBSuper) by DrawingBall
               </div>
             </div>
 
@@ -70,7 +89,7 @@
 
             <div class="portfolio-item">
               <div class="p-img-container">
-                <img src="images/portfolio/IMG_0223.jpg" alt="Goku">
+                <img src="images/portfolio/IMG_0223.jpg" alt="Goku" data-text="This is Kid Goku. Made by DrawingBall">
               </div>
               <div class="p-text-container">
                 This is Kid Goku. Made by DrawingBall
@@ -79,7 +98,7 @@
 
             <div class="portfolio-item">
               <div class="p-img-container">
-                <img src="images/portfolio/IMG_0225.jpg" alt="Goku">
+                <img src="images/portfolio/IMG_0225.jpg" alt="Goku" data-text="This is Piccolo. Made by DrawingBall">
               </div>
               <div class="p-text-container">
                 This is Piccolo. Made by DrawingBall
@@ -136,6 +155,7 @@
 
   <!-- SCRIPTS -->
   <script src="js/navbar.js"></script>
+  <script src="js/photoviewer.js"></script>
 </body>
 
 </html>
